@@ -1,1 +1,18 @@
-
+password = input()
+newpass = password
+end = 'q*s'
+i = 0
+while i in range(0, len(password)):
+    letter = password[i]
+    if letter == 'i':
+        newpass = newpass.replace('i' , '!')
+    elif letter == 'a':
+        newpass = newpass.replace('a' , '@')
+    elif letter == 'm':
+        newpass = newpass.replace('m' , 'M')
+    elif letter == 'B':
+        newpass = newpass.replace('B' , '8')
+    elif letter == 'o':
+        newpass = newpass.replace('o' , '.')
+    i = i + 1
+print(newpass + end)
